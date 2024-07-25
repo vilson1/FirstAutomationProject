@@ -1,0 +1,43 @@
+-cfare eshte selenium?
+   - selenium eshte nje bashkimi i disa librarive
+   - me ane te ketyre librarive na  mundeson qe te automatizojme browsers
+
+- cfare eshte maven
+   - eshte nje build automation tool
+
+- cfare eshte pom.xml?
+   - project object model
+   -eshte nje file e cila vjen nga maven
+   - me ane te se ciles ne kontrollojme versionet e tools qe perdorim.
+
+- cfare eshte dependency
+  - jane librari te cilat i fusim ne pom edhe ato shkarkojne librarite lokalisht
+
+  -------------------------------------------------
+  WebDriverManager.chromedriver().setup();
+          WebDriver driver=new ChromeDriver(); ->fillojne nje session te ri dhe inicializon driver
+
+   -driver.manage().window().maximize(); - e rowserin fullscreen
+
+   -driver.navigate().to()
+    -driver.get();- te dergojne ne linkun qe ne vendosim
+
+-------------------------------------------
+
+cfare jane locators?
+-jane metoda per te lokalizuar elementet ne browser
+
+ driver.findElement()- eshte nje metode per te gjetur elementet ne browser
+
+ LOCATORS
+  1- linktext() -- eshte nje lokator i cili gjen nje element i cili eshte link pra ka tag <a>
+         - eshte case sensitive
+  2-partialLinkText()- gjen nje elememnt i cili eshte link vetem me nje pjese te tekstit
+
+  3- By name- name eshte attributi i elementit dhe ne perdorim vleren e atributit
+
+  4- By id- id eshte attributi i elementit dhe ne perdorim vleren e atributit
+  5- className - perdor vleren e attributit class
+  6- tagName - perdoret duke shkruajtur tag te elementit
+
+  sendKeys()--perdoret per te shkruajtur nje string
