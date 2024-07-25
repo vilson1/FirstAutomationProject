@@ -1,0 +1,25 @@
+Test case 1.
+1. open chrome browser
+2. go to https://www.etsy.com/
+3. search for Iphone
+4. verify that title is Iphone - EtsyAlbania
+
+Test Case 2.
+1. open chrome browser
+2. http://zero.webappsecurity.com/login.html
+3. verify header text "Log in to ZeroBank"
+NOTE: per te marre tekstin e nje elementi perdorim metoden getText()
+Shembull:
+WebElement header=driver.findElement(By.tagName("H1"));
+element.getText() -> kthen nje string me tekstin qe ka elementi.
+(nese nk e beni dot e shikojme heren tjeter)
+
+Test Case 3.
+1.open chrome browser
+2. go to https://www.google.com/
+3. click Gmail  button
+4. verirfy title contains Gmail
+5. go back to google
+6. refresh the page
+7. verify title equals Google
+
