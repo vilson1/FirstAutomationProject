@@ -1,0 +1,18 @@
+- findElemet(By.method(STRING)) ->returns WebElement
+   WebElement elemetn=driver.findElemet(.....)
+   SendKeys(STRING) --> eshte nje metode per te shkruajtur nje text ne input box
+   getText() -> return nje string me tekstin qe ndodhet ne nje element
+   isDisplayed() -> eshte nje metode qe kthen nje boolean dhe tregon nese nje element is prezent ose jo.
+
+   -LOCATORS
+   1. linkText
+   2. PartialLinkTeks
+   3. name
+   4. id
+   5. className
+   6. tagName
+
+   7. css -> tag[attributName='vlera e attributit']
+   8. Xpath -> //tag[@attributName='vlera e attributit']
+      -relativeXpath --> eshte kur ne perdorim // dhe fillojme direkt te tag i elementit qe do lokalizojme
+      -absoluteXpath --> eshte kur ne i shkruajme te gjitha taget me / ne mes nga i pari deri te elementi qe ne duam te lokalizojme
