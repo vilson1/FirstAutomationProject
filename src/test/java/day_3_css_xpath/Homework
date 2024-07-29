@@ -1,0 +1,38 @@
+TC #1: NextBaseCRM, locators, getText(), getAttribute() practice
+1- Open a chrome browser
+2- Go to: https://login1.nextbasecrm.com/?forgot_password=yes
+3- Enter incorrect username into login box:
+4- Click to `Reset password` button
+5- Verify “error” label is as expected
+Expected: Login or E-mail not found
+PS: Inspect and decide which locator you should be using to locate web
+elements.
+PS2: Pay attention to where to get the text of this button from
+
+
+TC #2: NextBaseCRM, locators, getText(), getAttribute() practice
+1- Open a chrome browser
+2- Go to: https://login1.nextbasecrm.com/?forgot_password=yes
+3- Verify “Reset password” button text is as expected:
+Expected: Reset password
+
+TC #3: getText() and getAttribute() method practice
+1- Open a chrome browser
+2- Go to: https://practice.cydeo.com/registration_form
+3- Verify header text is as expected:
+Expected: Registration form
+4- Locate “First name” input box
+5- Verify placeholder attribute’s value is as expected:
+Expected: first name
+PS: getAttribute("ATTRIBUTE NAME") te kthen nje string me vleren e attributit
+
+TC #4: Library verifications
+1. Open Chrome browser
+2. Go to http://library2.cybertekschool.com/login.html
+3. Enter username: “incorrect@email.com”
+4. Enter password: “incorrect password”
+5. Verify: visually “Sorry, Wrong Email or Password”
+displayed
+PS: Locate username input box using “className” locator
+Locate password input box using “id” locator
+Locate Sign in button using “tagName” locator
