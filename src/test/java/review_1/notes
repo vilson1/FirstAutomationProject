@@ -1,0 +1,28 @@
+
+Lokalizimi i elementeve
+
+1- linktext
+   driver.findElement(By.linkText("Advertising"))
+
+2- partialLinkText
+   driver.findElement(By.partialLinkText("Advertising"))
+
+3- className
+   driver.findElement(By.className("pHiOh"))
+
+4- id
+  driver.findElement(By.id("APjFqb"))
+
+5- tagName
+  driver.findElement(By.tagName("a"))
+
+6- name
+   driver.findElement(By.name("q"))
+
+
+  6- cssSelector
+       driver.findElement(By.cssSelector("a[aria-label='Gmail ']"))
+
+  7-Xpath
+
+    driver.findElement(By.xpath(//div[.='United States'])))
