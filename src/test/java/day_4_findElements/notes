@@ -1,7 +1,7 @@
 -CSS locator
   1- eshte nje nga 8 locators te seleniumit
-  2- css na lejon qe te gjejme locator te personalizuar per nje element
-  3- mund ti perdorim te gjitha attributet per te formual locator unik
+  2- css na lejon qe te gjejme locator te personalizuar per nje element (customized locator)
+  3- mund ti perdorim te gjitha attributet per te formuar locator unik
   4- me ane te css selector ne mund te shkojme nga prindi te femija
   5- me css nuk mund te kalojme nga femija te prindi
 
@@ -12,8 +12,9 @@
    1- eshte nje nga 8 locators ne selenium
    2- css na lejon qe te gjejme locator te personalizuar per nje element
    3- mund ti perdorim te gjitha attributet per te formual locator unik
-   4- me ane te css selector ne mund te shkojme nga prindi te femija duke vendosur /
-   5- me css mund te kalojme nga femija te prindi duke vendosur /..
+   4- me ane te css selector ne mund te shkojme nga prindi te femija duke vendosur / tek femija i pare ose // tek nje femije me larg se 1
+   5- me css mund te kalojme nga femija te prindi duke vendosur ---> (/..) derisa te arrish tek prindi
+   Nese jane dy child psh 2 div vendosim [] me indeks brenda qe fillon nga 1
 
    Xpath eshte dy lojesh
   1- absolute Xpath
