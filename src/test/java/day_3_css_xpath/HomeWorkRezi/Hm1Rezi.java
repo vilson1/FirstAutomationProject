@@ -27,7 +27,7 @@ public class Hm1Rezi {
         //elements.
            //     PS2: Pay attention to where to get the text of this button from
         if (expectedLabel.equals(actualerrorLabel)){
-           System.out.println("“error” label is as expected  " + " " + actualerrorLabel + " " );
+           System.out.println(" test passed: “error” label is as expected  " + " " + actualerrorLabel + " " );
 
         }else{
             System.out.println("error label not as expected");
