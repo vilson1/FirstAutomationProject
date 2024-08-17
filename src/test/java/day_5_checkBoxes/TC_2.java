@@ -1,4 +1,4 @@
-package day_5;
+package day_5_checkBoxes;
 
 public class TC_2 {
     //TC #6: StaleElementReferenceException Task

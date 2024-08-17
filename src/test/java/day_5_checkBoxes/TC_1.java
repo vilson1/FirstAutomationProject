@@ -1,4 +1,4 @@
-package day_5;
+package day_5_checkBoxes;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
