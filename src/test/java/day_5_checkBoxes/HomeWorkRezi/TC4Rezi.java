@@ -16,7 +16,7 @@ public class TC4Rezi {
         driver.get("https://practice.cydeo.com/dropdown");
        // 3. Verify “Simple dropdown” default selected value is correct
        // Expected: “Please select an option”
-        Select simpleDropDown= new Select(driver.findElement(By.xpath("https://practice.cydeo.com/dropdown")));
+        Select simpleDropDown= new Select(driver.findElement(By.id("dropdown")));
 
         String expectedResult1="Please select an option";
         String actualResult1= simpleDropDown.getFirstSelectedOption().getText();
