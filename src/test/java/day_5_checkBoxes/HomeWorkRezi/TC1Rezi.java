@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utilities.WebDriverFactory;
 
+import java.util.List;
+
 public class TC1Rezi {
 
     public static void main(String[] args) throws InterruptedException {
@@ -20,18 +22,18 @@ public class TC1Rezi {
         Thread.sleep(3000);
         addElementbutton.click();
         //4. Verify “Delete” button is displayed after clicking.
-        WebElement deleteButton = driver.findElement(By.xpath("//button[@onclick='deleteElement()']"));
+        List<WebElement> deleteButton = driver.findElements(By.xpath("//button[@onclick='deleteElement()']"));
         Thread.sleep(3000);
-        if (deleteButton.isDisplayed()) {
+        if (deleteButton.size()!=0) {
             System.out.println("Test passed");
         } else {
             System.out.println("Test failed");
         }
         //5. Click to “Delete” button.
-        deleteButton.click();
+        deleteButton.get(0).click();
         //6. Verify “Delete” button is NOT displayed after clicking.
-        deleteButton = driver.findElement(By.xpath("//button[@onclick='deleteElement()']"));
-        if (!deleteButton.isDisplayed()) {
+        deleteButton = driver.findElements(By.xpath("//button[@onclick='deleteElement()']"));
+        if (deleteButton.size()==0) {
             System.out.println("test passed");
         } else {
             System.out.println("test failed");
