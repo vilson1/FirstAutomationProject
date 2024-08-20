@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import utilities.WebDriverFactory;
 
 public class TC1Rezi {
+
     public static void main(String[] args) throws InterruptedException {
         //TC #1: StaleElementReferenceException handling
         //1. Open Chrome browser
