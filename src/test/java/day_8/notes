@@ -1,0 +1,8 @@
+XPath
+elementet dinamike
+//tag[contains(@attributeName,'attribte value')]
+//tag[start-with(@attributeNAme,'attribute value')]
+//tag[end-with(@attributeNAme,'attribute value')]
+//tagname[]
+
+//TestNG
