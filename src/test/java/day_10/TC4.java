@@ -2,6 +2,9 @@ package day_10;
 
 public class TC4 {
     public static void main(String[] args) {
+
+        //metodat jane te WebtablesUtilities
+
 //        TC #2: Web table practice Task1 cont.
 //        1. Create a new class called WebTableUtils.
 //        2. Create two methods to verify order
