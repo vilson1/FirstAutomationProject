@@ -1,0 +1,35 @@
+Locators
+id, name, linkedText, PartialLinkedText, tagName, cssSelector,Xpath, class
+
+findElement vs findElements
+findelement gjen vetem nje element nese nk gjen element kthen noSuchElementException
+findElements kthen nje liste me elemente, nese nk gjen asnje kthen nje liste boshe
+
+checkBoxes vs radio buttons
+checkboxes zgjidhim nje ose me shume alternativa
+radio buttons mund te zgjedhim vetem nje alternative
+per ti bere handle perdorim 2 metoda isEnabled() dhe isSelected()
+
+Pop Ups
+jane 2 llojesh
+html popups i bejme handle njelloj si elementet e tjere
+JS popups Alert alert=driver.switchTo().Alert()
+
+Dropdowns
+HTMLDropdowns kane cdo tag tjeter pervec select behet handle njelloj si elementet e tjere
+selectDropdows kane tag select behet handle "Select select=new Select(id=dropdown)";
+selectByTitle()
+selectByValue()
+selectByIndex()
+getFirstSelectedOption() ->kthen elementin qe eshte i selektuar
+getOptions() -> kthen nje liste me web elemente qe ndodhen ne dropdown
+
+TABS
+String mainsWindowHandle=getWindowHandle()
+getWindowHandle() -> kthen nje string me id e tabit qe eshte fokusuar driveri
+getWindowHandles() -> kthen nje SET me id te te gjitha tabeve
+driver.switchTo.window(windowHAndle)
+driver.switchTo.window(mainsWindowHandle)
+
+iframes
+nje html brenda nje html
