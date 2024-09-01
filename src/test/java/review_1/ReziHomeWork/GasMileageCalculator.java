@@ -45,23 +45,24 @@ public class GasMileageCalculator {
 
         //6. Locate, clear and type “7925” into “Current odometer” field
 
-        WebElement currentOdometer= driver.findElement(By.xpath("//input[@id='mucodreading']"));
+        WebElement currentOdometer= driver.findElement(By.xpath("//input[@id='uscodreading']"));
         currentOdometer.clear();
         currentOdometer.sendKeys("7925");
         //7. Locate, clear and type “7550” into “Previous odometer” field
-        WebElement previousOdometer= driver.findElement(By.xpath("//input[@id='mupodreading']"));
+        WebElement previousOdometer= driver.findElement(By.xpath("//input[@id='uspodreading']"));
         previousOdometer.clear();
         previousOdometer.sendKeys("7550");
         //8. Locate, clear and type “16” into “Gas added” field
-        WebElement gasAdded= driver.findElement(By.xpath("//input[@id='mugasputin']"));
+        WebElement gasAdded= driver.findElement(By.xpath("//input[@id='usgasputin']"));
         gasAdded.clear();
         gasAdded.sendKeys("16");
         //9. Locate, clear and type “3.55” into “Gas price” field
-        WebElement gasPrice= driver.findElement(By.xpath("//input[@id='mugasprice']"));
+        WebElement gasPrice= driver.findElement(By.xpath("//input[@id='usgasprice']"));
         gasPrice.clear();
         gasPrice.sendKeys("3.55");
 //10. Click on Calculate button
-        WebElement calculateButton= driver.findElement(By.xpath("//input[@value='Calculate']"));
+        WebElement calculateButton= driver.findElement(By.xpath("(//input[@value='Calculate'])[1]"));
+        //(//td/input[@type='submit' and @name='x'])[1]
         calculateButton.click();
 //11. Verify mpg value is as expected:
         WebElement mpgValue= driver.findElement(By.xpath("//span[@class='bigtext']"));

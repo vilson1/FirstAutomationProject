@@ -50,4 +50,5 @@ public class BrowserUtilities {
     public static void compareText(String actualResult,String expectedResuld){
         Assert.assertEquals(actualResult,expectedResuld, "actual resul: "+actualResult+" is not the same as expected result: "+expectedResuld);
     }
+
 }
