@@ -51,4 +51,8 @@ public class BrowserUtilities {
         Assert.assertEquals(actualResult,expectedResuld, "actual resul: "+actualResult+" is not the same as expected result: "+expectedResuld);
     }
 
+    public static void click(String xpath){
+        Driver.getDriver().findElement(By.xpath(xpath)).click();
+    }
+
 }
