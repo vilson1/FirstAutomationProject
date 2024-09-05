@@ -1,0 +1,23 @@
+driver_id -> 12345678987fghjkdj
+driver.get()
+driver.findElement()
+driver.quit() -> driver_id -> 12345678987fghjkdj do fshihet
+Singleton Design Pattern -> eshte kur e bejme konstruktorin privat qe te mos krijojme objekte nga klasat e tjera pastaj perdorim getter dhe setter
+ku shikojme nese field eshte null e inicializojme nese jo mban vleren qe ka.
+
+configuration.properties ->per te shmangur harcode dhe per te centralizuar te dhenat
+TestBase -> eshte nje klase qe ene e perdornim per setup dhe tearDown
+ConfigurationReader-> lexon te dhenat nga properties file
+Driver ->  ben te mundur inicializimin  e driver dhe perdorimin e te njejtit driver ne te gjithe projektin
+BrowserUtilities -> kemi metoda te ndryshme qe i perdorim ne framewok
+
+Page Object Model Design Pattern (POM) ->kur krijojme nga nje klase per secilen faqe te webit dhe ne te vendosim web elementet qe ndodhen ne ate faqe dhe metodat qe perdoren ne ate faqe.
+- Per cdo page te aplikacionit krijojme nje clase
+- aty vendosim te gjitha elementet qe ndodhen ne ate faqe
+
+public EmriIKlases(){
+pageFactori.initElements(Driver.getDriver(),this)
+}
+
+@FindBy(xpath="fghjkkjh")
+public WebElement loginButton

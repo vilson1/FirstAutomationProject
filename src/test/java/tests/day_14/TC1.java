@@ -1,12 +1,17 @@
 package tests.day_14;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utilities.BrowserUtilities;
 import utilities.Driver;
 
 public class TC1 {
-    @Test
+    @AfterMethod
+    public void tearDown(){
+        Driver.closeDriver();
+    }
+    @Test(priority = 1)
     public void tc1(){
 //        TC #6: Scroll using JavascriptExecutor
 //        1- Open a chrome browser
@@ -25,5 +30,10 @@ public class TC1 {
         for (int i = 0; i < 10; i++) {
             js.executeScript("window.scrollBy(0,-750)");
         }
+    }
+
+    @Test(priority = 2)
+    public void TC2(){
+        Driver.getDriver().get("https://practice.cydeo.com/infinite_scroll");
     }
 }
