@@ -15,4 +15,23 @@ public class LoadingPage {
 
     @FindBy(xpath = "//img[@class='rounded mx-auto d-block']")
     public WebElement image;
+
+    @FindBy(xpath = "//button[.='Start']")
+    public WebElement startButton;
+
+    @FindBy(css = "div#loading")
+    public WebElement loadingBar;
+
+    @FindBy(id = "username")
+    public WebElement userName;
+
+    @FindBy(id = "pwd")
+    public WebElement password;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement submitButton;
+
+    @FindBy(id = "flash")
+    public WebElement passwordInvalidError;
+
 }
